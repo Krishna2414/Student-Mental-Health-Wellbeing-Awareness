@@ -175,3 +175,27 @@ section {
   background: linear-gradient(135deg, #9b7bf0, #6644cc);
   color: #fff;
 }
+.icon-sleep {
+  background: #e8e6fb;
+  color: #6355d4;
+}
+.icon-active {
+  background: #e0f3ee;
+  color: #16a085;
+}
+.icon-breaks {
+  background: #f7ece0;
+  color: #a9714b;
+}
+.icon-time {
+  background: #fdeaea;
+  color: #d9534f;
+}
+.icon-social {
+  background: #fdf0dd;
+  color: #d98324;
+}
+.icon-relax {
+  background: #e4f4ec;
+  color: #2e9e6b;
+}
