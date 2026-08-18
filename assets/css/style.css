@@ -200,6 +200,75 @@ section {
   color: #2e9e6b;
 }
 
+/* ========================================
+   Student Wellbeing Survey
+   ======================================== */
+
+.survey-section {
+  background-color: #f4f8f7;
+}
+
+.survey-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.survey-card fieldset {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.survey-card legend {
+  float: none;
+  width: auto;
+  padding: 0 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #245b55;
+}
+
+.survey-card .form-label {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.survey-card .form-control,
+.survey-card .form-select {
+  min-height: 48px;
+  border-radius: 8px;
+}
+
+.survey-card textarea.form-control {
+  min-height: 130px;
+}
+
+.survey-card .form-check {
+  margin-bottom: 0.65rem;
+}
+
+.survey-card .form-check-input {
+  margin-top: 0.25rem;
+}
+
+.survey-card .form-check-label {
+  cursor: pointer;
+}
+
+.survey-card .form-control:focus,
+.survey-card .form-select:focus,
+.survey-card .form-check-input:focus {
+  border-color: #245b55;
+  box-shadow: 0 0 0 0.2rem rgba(36, 91, 85, 0.15);
+}
+
+.survey-card .btn {
+  min-width: 150px;
+}
+
 /* Supoort Section */
 .support-section {
   background-color: #e7f6f7;
@@ -315,6 +384,58 @@ section {
   border-left: 5px solid var(--highlight-color-light) !important;
 }
 
+/* =========================================
+   Contact & Feedback
+   ========================================= */
+
+.contact-feedback-section {
+  background-color: #f5f8fa;
+}
+
+.feedback-form-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-form-card .form-label {
+  font-weight: 600;
+}
+
+.feedback-form-card .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.feedback-form-card .form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.feedback-form-card textarea {
+  resize: vertical;
+}
+
+.feedback-form-card .form-text {
+  margin-top: 0.4rem;
+}
+/* Success Page */
+
+.success-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-icon {
+  font-size: 4rem;
+}
+
+.success-page h1 {
+  font-weight: 700;
+}
 /* Footer */
 
 footer {
@@ -354,8 +475,61 @@ footer a:focus {
 }
 
 /* Responsive design */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .survey-card {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  .survey-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .survey-card fieldset {
+    padding: 1rem;
+  }
+
+  .survey-card .btn {
+    width: 100%;
+    margin: 0 0 0.75rem 0 !important;
+  }
+}
 
 @media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .support-section {
     padding: 60px 15px;
   }

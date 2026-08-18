@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete the Student Wellbeing Awareness Survey to share your views on student mental health, wellbeing, healthy habits and access to support."
+    />
+    <title>
+      Wellbeing Survey | Student Mental Health & Wellbeing Awareness
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html#home">
+          <img
+            src="assets/images/student_mental_health_wellbeing_awareness_logo.png"
+            alt="Student Mental Health and Wellbeing Awareness logo"
+            class="logo"
+            width="200px"
+          />
+        </a>
+        <!-- Mobile menu button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavigation"
+          aria-controls="mainNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#mental-health">
+                Mental Health
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#wellbeing-tips">
+                Wellbeing Tips
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#survey">Survey</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#support"> Support </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-feedback"
+                >Contact & Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Student Wellbeing Survey Section -->
+    <section id="survey" class="survey-section py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Student Wellbeing Awareness Survey</h2>
+
+          <p>
+            Share your views and experiences about student mental health and
+            wellbeing. This short survey is for awareness and educational
+            purposes.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-9">
+            <div class="survey-card">
+              <form
+                action="success.html"
+                method="get"
+                class="needs-validation"
+                novalidate
+              >
+                <!-- Basic Information -->
+                <fieldset class="mb-4">
+                  <legend>About You</legend>
+
+                  <!-- Age -->
+                  <div class="mb-4">
+                    <label for="age" class="form-label">
+                      What is your age?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="age"
+                      name="age"
+                      min="16"
+                      max="100"
+                      required
+                      placeholder="Enter your age"
+                    />
+
+                    <div class="invalid-feedback">
+                      Please enter an age between 16 and 100.
+                    </div>
+                  </div>
+
+                  <!-- Study Level -->
+                  <div class="mb-4">
+                    <label for="studyLevel" class="form-label">
+                      What level are you currently studying at?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </label>
+
+                    <select
+                      class="form-select"
+                      id="studyLevel"
+                      name="studyLevel"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Please select an option
+                      </option>
+                      <option value="college">College</option>
+                      <option value="undergraduate">Undergraduate</option>
+                      <option value="postgraduate">Postgraduate</option>
+                      <option value="other">Other</option>
+                    </select>
+
+                    <div class="invalid-feedback">
+                      Please select your level of study.
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Mental Health Awareness -->
+                <fieldset class="mb-4">
+                  <legend>Mental Health Awareness</legend>
+
+                  <!-- Awareness -->
+                  <div class="mb-4">
+                    <p class="form-label">
+                      How would you rate your awareness of student mental
+                      health?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </p>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="awareness"
+                        id="awarenessExcellent"
+                        value="excellent"
+                        required
+                      />
+                      <label class="form-check-label" for="awarenessExcellent">
+                        Very good
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="awareness"
+                        id="awarenessGood"
+                        value="good"
+                      />
+                      <label class="form-check-label" for="awarenessGood">
+                        Good
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="awareness"
+                        id="awarenessAverage"
+                        value="average"
+                      />
+                      <label class="form-check-label" for="awarenessAverage">
+                        Average
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="awareness"
+                        id="awarenessLimited"
+                        value="limited"
+                      />
+                      <label class="form-check-label" for="awarenessLimited">
+                        Limited
+                      </label>
+                    </div>
+
+                    <div class="invalid-feedback">Please select an option.</div>
+                  </div>
+
+                  <!-- Common Issues -->
+                  <div class="mb-4">
+                    <p class="form-label">
+                      Which issues do you think can affect student wellbeing?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </p>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="stress"
+                        name="issues"
+                        value="stress"
+                      />
+                      <label class="form-check-label" for="stress">
+                        Stress
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="anxiety"
+                        name="issues"
+                        value="anxiety"
+                      />
+                      <label class="form-check-label" for="anxiety">
+                        Anxiety
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="loneliness"
+                        name="issues"
+                        value="loneliness"
+                      />
+                      <label class="form-check-label" for="loneliness">
+                        Loneliness
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="academicPressure"
+                        name="issues"
+                        value="academic-pressure"
+                      />
+                      <label class="form-check-label" for="academicPressure">
+                        Academic pressure
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="financialPressure"
+                        name="issues"
+                        value="financial-pressure"
+                      />
+                      <label class="form-check-label" for="financialPressure">
+                        Financial pressure
+                      </label>
+                    </div>
+
+                    <div class="form-text">
+                      Please select at least one option.
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Wellbeing -->
+                <fieldset class="mb-4">
+                  <legend>Your Wellbeing</legend>
+
+                  <!-- Wellbeing rating -->
+                  <div class="mb-4">
+                    <p class="form-label">
+                      How would you describe your current wellbeing?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </p>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="wellbeing"
+                        id="wellbeingVeryGood"
+                        value="very-good"
+                        required
+                      />
+                      <label class="form-check-label" for="wellbeingVeryGood">
+                        Very good
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="wellbeing"
+                        id="wellbeingGood"
+                        value="good"
+                      />
+                      <label class="form-check-label" for="wellbeingGood">
+                        Good
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="wellbeing"
+                        id="wellbeingOkay"
+                        value="okay"
+                      />
+                      <label class="form-check-label" for="wellbeingOkay">
+                        Okay
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="wellbeing"
+                        id="wellbeingPoor"
+                        value="poor"
+                      />
+                      <label class="form-check-label" for="wellbeingPoor">
+                        Poor
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Support -->
+                  <div class="mb-4">
+                    <label for="supportAwareness" class="form-label">
+                      How confident are you that you know where to find support
+                      if you need it?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </label>
+
+                    <select
+                      class="form-select"
+                      id="supportAwareness"
+                      name="supportAwareness"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Please select an option
+                      </option>
+                      <option value="very-confident">Very confident</option>
+                      <option value="confident">Confident</option>
+                      <option value="unsure">Unsure</option>
+                      <option value="not-confident">Not confident</option>
+                    </select>
+
+                    <div class="invalid-feedback">
+                      Please select your answer.
+                    </div>
+                  </div>
+
+                  <!-- Healthy habits -->
+                  <div class="mb-4">
+                    <label for="healthyHabit" class="form-label">
+                      Which wellbeing habit do you find most useful?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </label>
+
+                    <select
+                      class="form-select"
+                      id="healthyHabit"
+                      name="healthyHabit"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Please select an option
+                      </option>
+                      <option value="sleep">Getting enough sleep</option>
+                      <option value="exercise">Exercise</option>
+                      <option value="breaks">Taking regular breaks</option>
+                      <option value="time-management">Managing time</option>
+                      <option value="socialising">
+                        Spending time with others
+                      </option>
+                      <option value="relaxation">Relaxation and hobbies</option>
+                    </select>
+
+                    <div class="invalid-feedback">
+                      Please select a wellbeing habit.
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Feedback -->
+                <fieldset class="mb-4">
+                  <legend>Your Views</legend>
+
+                  <div class="mb-4">
+                    <label for="feedback" class="form-label">
+                      What could your school, college or university do to
+                      improve student wellbeing?
+                      <span class="text-danger" aria-hidden="true">*</span>
+                    </label>
+
+                    <textarea
+                      class="form-control"
+                      id="feedback"
+                      name="feedback"
+                      rows="5"
+                      minlength="10"
+                      maxlength="500"
+                      required
+                      placeholder="Enter your thoughts..."
+                    ></textarea>
+
+                    <div class="form-text">
+                      Please enter between 10 and 500 characters.
+                    </div>
+
+                    <div class="invalid-feedback">
+                      Please provide at least 10 characters of feedback.
+                    </div>
+                  </div>
+
+                  <!-- Optional email -->
+                  <div class="mb-4">
+                    <label for="email" class="form-label">
+                      Email address
+                      <span class="text-muted">(optional)</span>
+                    </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="name@example.com"
+                    />
+
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Agreement -->
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="understanding"
+                    name="understanding"
+                    required
+                  />
+
+                  <label class="form-check-label" for="understanding">
+                    I understand that this survey is for educational awareness
+                    purposes and does not replace professional mental health
+                    advice.
+                    <span class="text-danger" aria-hidden="true">*</span>
+                  </label>
+
+                  <div class="invalid-feedback">
+                    Please confirm that you understand this information.
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary-custom btn-lg">
+                    <i
+                      class="fa-solid fa-paper-plane me-2"
+                      aria-hidden="true"
+                    ></i>
+                    Submit Survey
+                  </button>
+
+                  <button
+                    type="reset"
+                    class="btn btn-secondary-custom btn-lg ms-2"
+                  >
+                    Clear Form
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <!-- About -->
+          <div class="col-12 col-md-6 col-lg-5 about">
+            <a class="footer-logo mb-2" href="index.html#home">
+              <img
+                src="assets/images/student_mental_health_wellbeing_awareness_logo.png"
+                alt="Student Mental Health and Wellbeing Awareness logo"
+                class="logo"
+                width="230px"
+              />
+            </a>
+
+            <p class="text-light">
+              An educational website designed to promote awareness of student
+              mental health, healthy wellbeing habits and access to appropriate
+              support.
+            </p>
+          </div>
+
+          <!-- Quick Navigation -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="h5 fw-bold mb-3">Quick Links</h3>
+
+            <ul class="list-unstyled footer-links mb-0">
+              <li class="mb-2">
+                <a
+                  href="index.html#home"
+                  class="text-white text-decoration-none"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a
+                  href="index.html#mental-health"
+                  class="text-white text-decoration-none"
+                >
+                  Mental Health
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a
+                  href="index.html#wellbeing-tips"
+                  class="text-white text-decoration-none"
+                >
+                  Wellbeing Tips
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#survey" class="text-white text-decoration-none">
+                  Wellbeing Survey
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#support"
+                  class="text-white text-decoration-none"
+                >
+                  Support
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="index.html#contact-feedback"
+                  class="text-white text-decoration-none"
+                >
+                  Contact & Feedback
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <h3 class="h5 fw-bold mb-3">Contact</h3>
+
+            <p class="mb-2">
+              <strong>Email:</strong><br />
+              <a
+                href="mailto:studentwellbeing@example.com"
+                class="text-white text-decoration-none"
+              >
+                studentwellbeing@example.com
+              </a>
+            </p>
+            <div class="social-icons mt-4">
+              <h3 class="h5 fw-bold mb-3">Follow Us</h3>
+
+              <a
+                href="https://www.instagram.com/"
+                class="text-white me-3"
+                aria-label="Instagram"
+                target="_blank"
+              >
+                <i class="bi bi-instagram fs-6"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/"
+                class="text-white me-3"
+                aria-label="Facebook"
+                target="_blank"
+              >
+                <i class="bi bi-facebook fs-6"></i>
+              </a>
+
+              <a
+                href="https://www.twitter.com/"
+                class="text-white me-3"
+                aria-label="Twitter"
+                target="_blank"
+              >
+                <i class="bi bi-twitter-x fs-6"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/"
+                class="text-white"
+                aria-label="YouTube"
+                target="_blank"
+              >
+                <i class="bi bi-youtube fs-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <hr class="border-light my-4" />
+
+        <div class="row text-center">
+          <div class="col-12 mx-auto">
+            <p class="mb-0">
+              &copy; 2026 Student Mental Health &amp; Wellbeing Awareness
+              Educational project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const forms = document.querySelectorAll(".needs-validation");
+
+        Array.from(forms).forEach((form) => {
+          form.addEventListener("submit", (event) => {
+            const issueCheckboxes = form.querySelectorAll(
+              'input[name="issues"]',
+            );
+
+            const issueSelected = Array.from(issueCheckboxes).some(
+              (checkbox) => checkbox.checked,
+            );
+
+            if (!issueSelected) {
+              event.preventDefault();
+              event.stopPropagation();
+
+              issueCheckboxes[0].setCustomValidity(
+                "Please select at least one option.",
+              );
+            } else {
+              issueCheckboxes[0].setCustomValidity("");
+            }
+
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

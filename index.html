@@ -41,7 +41,7 @@
         <a class="navbar-brand" href="#home">
           <img
             src="assets/images/student_mental_health_wellbeing_awareness_logo.png"
-            alt="Boardwalk Games logo"
+            alt="Student Mental Health and Wellbeing Awareness logo"
             class="logo"
             width="200px"
           />
@@ -67,15 +67,24 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"> Mental Health </a>
+              <a class="nav-link" href="#mental-health"> Mental Health </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"> Wellbeing Tips </a>
+              <a class="nav-link" href="#wellbeing-tips"> Wellbeing Tips </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#"> Support </a>
+              <a class="nav-link" href="survey.html">Survey</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#support"> Support </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-feedback"
+                >Contact & Feedback</a
+              >
             </li>
           </ul>
         </div>
@@ -96,9 +105,13 @@
               it.
             </p>
 
-            <a href="#" class="btn btn-primary-custom me-md-2"> Learn More </a>
+            <a href="#mental-health" class="btn btn-primary-custom me-md-2">
+              Learn More
+            </a>
 
-            <a href="#" class="btn btn-secondary-custom"> Get Support </a>
+            <a href="#support" class="btn btn-secondary-custom">
+              Get Support
+            </a>
           </div>
 
           <!-- Hero image -->
@@ -559,6 +572,96 @@
       </div>
     </section>
 
+    <!-- Contact & Feedback Section -->
+    <section id="contact-feedback" class="contact-feedback-section py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contact & Feedback</h2>
+
+          <p>
+            We would love to hear about your experience with this website. Use
+            the form below to share your feedback or suggest improvements.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="feedback-form-card">
+              <form action="success.html" method="get">
+                <!-- Name and Email -->
+                <div class="row">
+                  <!-- Name -->
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="name" class="form-label"> Name </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name"
+                      autocomplete="name"
+                      required
+                    />
+
+                    <div class="form-text">Please enter your name.</div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="email" class="form-label"> Email </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="name@example.com"
+                      autocomplete="email"
+                      required
+                    />
+
+                    <div class="form-text">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                  <label for="message" class="form-label"> Message </label>
+
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us about your experience or suggest an improvement..."
+                    required
+                  ></textarea>
+
+                  <div class="form-text">
+                    Please provide your feedback or suggestion.
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary-custom">
+                    <i
+                      class="fa-solid fa-paper-plane me-2"
+                      aria-hidden="true"
+                    ></i>
+                    Submit Feedback
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="site-footer pt-5 pb-3">
       <div class="container">
@@ -568,7 +671,7 @@
             <a class="footer-logo mb-2" href="#home">
               <img
                 src="assets/images/student_mental_health_wellbeing_awareness_logo.png"
-                alt="Boardwalk Games logo"
+                alt="Student Mental Health and Wellbeing Awareness logo"
                 class="logo"
                 width="230px"
               />
@@ -609,10 +712,22 @@
                   Wellbeing Tips
                 </a>
               </li>
-
+              <li class="mb-2">
+                <a href="survey.html" class="text-white text-decoration-none">
+                  Wellbeing Survey
+                </a>
+              </li>
               <li class="mb-2">
                 <a href="#support" class="text-white text-decoration-none">
                   Support
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#contact-feedback"
+                  class="text-white text-decoration-none"
+                >
+                  Contact & Feedback
                 </a>
               </li>
             </ul>
