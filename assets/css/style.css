@@ -1,2 +1,54 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --primary-color: #263238;
+  --secondary-color: #1f6f66;
+  --highlight-color: #f1fafc;
+  --highlight-color-dark: #1f6f66;
+  --highlight-color-light: #f4c95d;
+}
+
+/* Global styles */
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  background-color: var(--highlight-color);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--highlight-color-dark);
+}
+
+.navbar-brand {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--highlight-color-light) !important;
+}
