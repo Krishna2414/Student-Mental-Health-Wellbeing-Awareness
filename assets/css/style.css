@@ -107,3 +107,71 @@ h6 {
   background-color: var(--highlight-color-dark);
   color: var(--primary-color);
 }
+
+/* Content Sections CSS */
+section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.section-title p {
+  max-width: 750px;
+  margin: 10px auto 0;
+}
+
+/* Cards */
+.wellbeing-card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.wellbeing-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.wellbeing-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  transition: transform 0.25s ease;
+}
+
+.wellbeing-card:hover .wellbeing-icon {
+  transform: scale(1.08);
+}
+
+.icon-stress {
+  background: linear-gradient(135deg, #34c98a, #1f8a5c);
+  color: #fff;
+}
+.icon-anxiety {
+  background: linear-gradient(135deg, #5b9df5, #2f66c4);
+  color: #fff;
+}
+.icon-loneliness {
+  background: linear-gradient(135deg, #f5b345, #d97a1c);
+  color: #fff;
+}
+.icon-academic {
+  background: linear-gradient(135deg, #9b7bf0, #6644cc);
+  color: #fff;
+}
