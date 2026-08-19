@@ -438,6 +438,54 @@ section {
 .success-page h1 {
   font-weight: 700;
 }
+
+/* 404 Page */
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.error-container {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 35px;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.error-code {
+  font-size: 110px;
+  font-weight: 800;
+  line-height: 1;
+  color: #4c9a8a;
+  margin-bottom: 15px;
+}
+
+.home-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #4c9a8a;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.home-button:hover {
+  background: #397d70;
+  transform: translateY(-2px);
+}
+
+.help-text {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #87939a;
+}
 /* Footer */
 
 footer {
@@ -514,6 +562,16 @@ footer a:focus {
   .survey-card .btn {
     width: 100%;
     margin: 0 0 0.75rem 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .error-container {
+    padding: 45px 22px;
+  }
+
+  .error-code {
+    font-size: 80px;
   }
 }
 
