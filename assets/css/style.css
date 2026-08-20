@@ -288,27 +288,6 @@ section {
   min-width: 150px;
 }
 
-/* Supoort Section */
-.support-section {
-  background-color: #e7f6f7;
-}
-.support-section .section-title {
-  margin-bottom: 45px;
-}
-.support-section .section-title h2 {
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  font-size: 2.3rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-.support-section .section-title p {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #555;
-  line-height: 1.7;
-}
-
 /* Accordion */
 .support-accordion {
   max-width: 900px;
@@ -397,21 +376,6 @@ section {
   color: #1f6f66;
 }
 
-/* NHS button */
-.btn-primary-custom {
-  background-color: #457b9d;
-  border: none;
-  color: var(--color);
-  padding: 11px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.btn-primary-custom:hover {
-  background-color: var(--secondary-color);
-  color: var(--color);
-}
-
 .important-item {
   border-left: 5px solid var(--highlight-color-light) !important;
 }
@@ -419,10 +383,6 @@ section {
 /* =========================================
    Contact & Feedback
    ========================================= */
-
-.contact-feedback-section {
-  background-color: #f5f8fa;
-}
 
 .feedback-form-card {
   background-color: var(--color);
@@ -632,16 +592,31 @@ footer a:focus {
 
   .btn-primary-custom,
   .btn-secondary-custom {
-    width: 100%;
-    margin-bottom: 10px;
+    padding: 7px 13px;
+    font-size: 13px;
   }
-
-  .support-section {
-    padding: 60px 15px;
+  .hero-image {
+    margin-top: 20px;
   }
-
-  .support-section .section-title h2 {
-    font-size: 1.8rem;
+  section {
+    padding: 30px 0;
+  }
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+  .section-title {
+    margin-bottom: 15px;
+  }
+  .wellbeing-card {
+    font-size: 13px;
+    padding: 15px;
+  }
+  .wellbeing-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .wellbeing-card p {
+    margin: 0;
   }
 
   .support-accordion .accordion-button {
@@ -665,5 +640,23 @@ footer a:focus {
 
   .support-accordion .accordion-body {
     padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 0;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  footer .about p {
+    margin-right: 1rem;
+    font-size: 13px;
+    margin-bottom: 0;
   }
 }
