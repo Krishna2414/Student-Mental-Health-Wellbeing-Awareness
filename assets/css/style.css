@@ -348,7 +348,7 @@ section {
   margin-right: 0.75rem;
   border-radius: 50%;
   background-color: #e6f5f3;
-  color: var(--bs-primary, #0d6efd);
+  color: var(--secondary-color);
 }
 .accordion-button:not(.collapsed) .support-icon {
   background-color: var(--color);
