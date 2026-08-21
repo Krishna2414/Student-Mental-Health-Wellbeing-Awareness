@@ -226,6 +226,28 @@ The form and associated controls were manually tested to check:
 - Layout on smaller screens.
 - Visual consistency.
 
+## Wellbeing Survey
+
+The website includes a dedicated Wellbeing Survey page, accessible from the main navigation and footer.
+
+The survey allows users to provide information about their wellbeing through a series of structured questions. The page was designed to be clear, accessible and straightforward to complete.
+
+**Survey Features**
+
+The survey includes:
+
+- Clearly labelled form fields.
+- <fieldset> elements used to group related questions.
+- <legend> elements to provide meaningful descriptions for each group of questions.
+- Required fields where appropriate.
+- Minimum and maximum validation constraints.
+- Appropriate input types for different questions.
+- Clear instructions to help users complete the survey.
+- Responsive form layout for desktop, tablet and mobile devices.
+- Custom JavaScript to provide interactive functionality and validation.
+- Clear feedback when user input does not meet the required criteria.
+- Accessible labels and form controls.
+
 ---
 
 ## Footer
@@ -244,10 +266,11 @@ It can include:
 
 # 404 page
 
-A 404 page will be implemented and will display if a user navigates to a _broken link_.
+A custom 404 page is included in the project and is displayed when a user navigates to a broken or missing page.
 
-The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page.
-With the need of the browser back button.
+The page provides a clear message informing the user that the requested page could not be found and provides navigation back to the main website.
+
+Users can return to the main website directly from the 404 page without needing to rely on the browser's back button.
 
 ![404](assets/images/404.png)
 
@@ -387,16 +410,18 @@ Any identified issues were reviewed and corrected where appropriate.
 
 The main features and user stories were manually tested.
 
-| User Story                                                   | Test                                                                                                   | Result |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------ |
-| As a student, I want to learn about mental health.           | Navigate to the mental health information section and confirm that the content is displayed correctly. | Pass   |
-| As a student, I want to find wellbeing advice.               | Navigate to the wellbeing section and confirm that the advice is accessible and readable.              | Pass   |
-| As a student, I want to find support resources.              | Open the support section and test the external resource links.                                         | Pass   |
-| As a visitor, I want to navigate the website easily.         | Test navigation links and confirm that they direct users to the correct sections.                      | Pass   |
-| As a mobile user, I want the website to be easy to use.      | Test the website at mobile viewport sizes and check navigation, layout and content.                    | Pass   |
-| As a visitor, I want readable content.                       | Check text size, spacing, contrast and page layout.                                                    | Pass   |
-| As a visitor, I want interactive controls to work correctly. | Test buttons, navigation controls and expandable content.                                              | Pass   |
-| As a visitor, I want external support links to work.         | Open support links and confirm that they direct to the intended resources.                             | Pass   |
+| User Story                                                   | Test                                                                                                                            | Result |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| As a student, I want to learn about mental health.           | Navigate to the mental health information section and confirm that the content is displayed correctly.                          | Pass   |
+| As a student, I want to find wellbeing advice.               | Navigate to the wellbeing section and confirm that the advice is accessible and readable.                                       | Pass   |
+| As a student, I want to find support resources.              | Open the support section and test the external resource links.                                                                  | Pass   |
+| As a student, I want to complete the wellbeing survey.       | Open the Survey page, complete the required fields and test valid and invalid inputs, including minimum and maximum validation. | Pass   |
+| As a visitor, I want to navigate the website easily.         | Test navigation links and confirm that they direct users to the correct sections.                                               | Pass   |
+| As a mobile user, I want the website to be easy to use.      | Test the website at mobile viewport sizes and check navigation, layout and content.                                             | Pass   |
+| As a visitor, I want readable content.                       | Check text size, spacing, contrast and page layout.                                                                             | Pass   |
+| As a visitor, I want interactive controls to work correctly. | Test buttons, navigation controls and expandable content.                                                                       | Pass   |
+| As a visitor, I want external support links to work.         | Open support links and confirm that they direct to the intended resources.                                                      | Pass   |
+| As a visitor, I want to use the survey on a mobile device.   | Test the survey at mobile, tablet and desktop viewport sizes and check the form layout, controls and readability.               | Pass   |
 
 ---
 
@@ -471,12 +496,13 @@ The deployment process was:
 2. Select **Settings**.
 3. Select **Pages** from the sidebar.
 4. Under **Build and deployment**, select the appropriate branch.
-5. Select the appropriate folder, such as `/root`, if required.
-6. Click **Save**.
-7. GitHub Pages generates the deployed website.
-8. Open the generated URL.
-9. Test the deployed version to confirm that it matches the development version.
-10. Check navigation, images, forms and external links on the deployed website.
+5. Select the main branch.
+6. Select the /root folder.
+7. Click **Save**.
+8. GitHub Pages generates the deployed website.
+9. Open the generated URL.
+10. Test the deployed version to confirm that it matches the development version.
+11. Check navigation, images, forms and external links on the deployed website.
 
 ## Live Website
 
@@ -543,32 +569,24 @@ The project reinforced the importance of validating AI-generated code rather tha
 
 ## Content
 
-Information for the website was researched using reputable mental health and wellbeing resources.
+Information presented on this website was informed by reputable mental health and wellbeing resources, including the NHS and other educational wellbeing resources.
 
-Sources include:
+The NHS Mental Health information used for research is available from:
 
-- NHS mental health and wellbeing resources.
-- Student support and university wellbeing resources.
-- Reputable mental health organisations.
-- Educational resources relating to student wellbeing.
+NHS — Mental Health: https://www.nhs.uk/mental-health/
 
-External information has been presented for educational awareness purposes and should not be considered professional medical advice.
-
-Specific external sources should be listed here where content has been directly informed by or adapted from them.
-
----
+The website content has been written and presented as an educational awareness resource. It does not provide medical diagnosis or professional medical advice.
 
 ## Media
 
-The project uses resources including:
+The project uses the following third-party resources:
 
-- Icons provided by [Font Awesome](https://fontawesome.com/).
-- Typography provided by [Google Fonts](https://fonts.google.com/).
-- Responsive layout system provided by [Bootstrap 5](https://getbootstrap.com/).
+- Font Awesome — icons used throughout the website: https://fontawesome.com/
+- Bootstrap 5 — responsive layout and interface components: https://getbootstrap.com/
+- Google Fonts — Poppins and Open Sans typefaces: https://fonts.google.com/
+- Hero Image: [View Hero Image](assets/images/hero-image.png) — source/creator information is currently being verified. The image will be replaced or its original creator, source and licence will be credited before final submission.
 
-All media and third-party resources used in the project were checked for appropriate usage rights and attribution requirements.
-
-Where images were obtained from external sources, appropriate attribution should be provided here.
+No claim is made that the hero image is an original work of the project author.
 
 ---
 
